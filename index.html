@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/345ede191d.js" crossorigin="anonymous"></script>
+    <title>CodePen</title>
+    <link rel="icon" href="g1.png">
+</head>
+<body>
+    <nav>
+        <img src="g1.png" alt="logo">
+        <div id="nav-right">
+            <button>CodePen v1</button>
+            <button>CodePen v3</button>
+            <button><a href="https://gyan-sy.github.io/cv/">My Portfolio</a></button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left" id="save-data">
+                <label><i class="fa-brands fa-html5" style="color: #f8495a;"></i>HTML</label>
+                <textarea id="html-code" onkeyup = "run()"></textarea>
+                <label><i class="fa-brands fa-css3-alt" style="color: #6be6ff;"></i>CSS</label>
+                <textarea id="css-code" onkeyup = "run()"></textarea>
+                <label><i class="fa-brands fa-square-js" style="color: #fbf413;"></i>JAVASCRIPT</label>
+                <textarea id="js-code" onkeyup = "run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play fa-beat-fade" style="color: #5cff85;"></i>OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
